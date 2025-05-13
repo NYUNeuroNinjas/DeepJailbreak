@@ -1,0 +1,3 @@
+# DeepJailbreak
+
+This project explores the vulnerability of deep neural networks to adversarial attacks by targeting a pretrained ResNet-34 model on a subset of 100 ImageNet classes. After establishing baseline performance on clean data, we implemented the Fast Gradient Sign Method (FGSM) and its iterative variant (PGD) to generate pixel-wise adversarial examples within an $L_\infty$ constraint ($\epsilon$ = 0.02). We also introduced a patch-based attack that perturbs only a 32×32 region of the image. All attacks led to significant drops in top-1 and top-5 accuracy. Finally, we evaluated the transferability of these adversarial examples to other models like DenseNet-121 and SqueezeNet, demonstrating the broader impact of such vulnerabilities.
